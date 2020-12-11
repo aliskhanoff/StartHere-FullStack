@@ -1,0 +1,19 @@
+{
+  "name": "@starthere/fullstack-backend",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node -r dotenv/config index.js",
+    "debug": "nodemon -r dotenv/config debug.js"
+  },
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "fastify": "^3.9.1",
+    "fastify-static": "^3.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
+  }
+}

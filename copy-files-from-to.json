@@ -1,0 +1,7 @@
+{
+    "copyFiles": [{
+            "from": "./frontend/build/**/*",
+            "to": "./backend/public"
+        }
+    ]
+}

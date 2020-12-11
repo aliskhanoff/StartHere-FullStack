@@ -1,0 +1,36 @@
+{
+  "name": "@starthere/fullstack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/aliskhanoff/StartHere-FullStack.git",
+  "author": "Ramazan <badc0dead@outlook.com> badc0dead",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "stf": "yarn --cwd ./frontend/ start",
+    "stb": "yarn --cwd ./backend/ start",
+    "sta": "concurrently \"yarn --cwd ~/frontend/ start\" \"yarn --cwd ~/frontend/ backend\"",
+    
+    "deb": "yarn --cwd ./backend/ debug",
+
+    "buf": "yarn --cwd ./frontend/ build",
+    "bub": "yarn --cwd ./backend/  build",
+    "bur": "run-s buf cof deb",
+    
+    "clf": "rimraf ./frontend/build",
+    "clb": "rimraf ./backend/public",
+    
+    "coa": "copy-files-from-to",
+    "cof": "run-s clb coa"
+  },
+  "devDependencies": {
+    "concurrently": "^5.3.0",
+    "copy-files-from-to": "^3.2.0",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2"
+  }
+}
