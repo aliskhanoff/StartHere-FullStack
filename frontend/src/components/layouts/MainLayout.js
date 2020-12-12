@@ -7,7 +7,7 @@ export const MainLayout = ({ children }) => {
     return (
         <div className="columns">
             <div className="column is-auto"></div>
-            <div className="column is-8">
+            <div className="column is-10">
                 
                 <nav className="navbar">
                     <div className="navbar-menu">

@@ -5,7 +5,11 @@ export const IndexPage = () => {
 
     return (
         <MainLayout>
-            This is main page
+            
+            <section className="hero is-black is-fullheight">
+
+            </section>
+
         </MainLayout>
     )
 
